@@ -1,6 +1,7 @@
-const sheetID = '1JHTsFnzvEwoc7pQhzIr4EZ4hRPiD0JuS9H_iN9SakS4'
-const apiKey = 'AIzaSyACyo3-x-Fr2DHfHxRypRFPGzPjOIz3sIc';
-const sheetURL = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/repuestos?key=${apiKey}`;
+const sheetID = '1FuqXx8IjdQNVKFbQwknvIDNsJf3u6w3nnpWK3rkljYk'
+
+const apiKey = 'AIzaSyAfE3cLBa0_m-gSAqbGlEUVtdQZiQhYsB0';
+const sheetURL = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/lista1?key=${apiKey}`;
 
 let cart = [];
 let allProducts = []; 
