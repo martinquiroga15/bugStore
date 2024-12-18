@@ -207,9 +207,9 @@ button {
 }
 
 
-/* Estilos para el toast */
+
 .toast {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50; 
     color: white;
     padding: 10px 20px;
     margin-bottom: 10px;
@@ -261,7 +261,7 @@ button {
 }
 @media (max-width: 768px) {
     #view-cart {
-        display: block; /* Visible en pantallas pequeñas */
+        display: block; 
     }
 }
 
