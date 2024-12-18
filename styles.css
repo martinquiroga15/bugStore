@@ -56,7 +56,7 @@ main{
     list-style: none;
     padding: 10px 15px; 
     margin-bottom: 10px;
-    background-color: #ffebcc; 
+    background-color: #ffffffd3; 
     color: #333; 
     border-radius: 8px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
@@ -65,13 +65,13 @@ main{
 }
 
 #category-list li:hover {
-    background-color: #ffa41c; 
-    color: white; 
+    background-color: #05F2DB; 
+    color: rgb(0, 0, 0); 
     transform: scale(1.05);
 }
 
 #category-list li:active {
-    background-color: #e68a00;
+    background-color: #05F2DB;
 }
 
 
@@ -100,7 +100,7 @@ main{
 }
 
 #product-list h2 {
-    border-bottom: 2px solid #ffa41c;
+    border-bottom: 2px solid #0583F2;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -139,7 +139,7 @@ main{
     width: 25%;
     min-width: 300px;
     background-color: white;
-    border-left: 2px solid #ffc65c;
+    border-left: 2px solid #0583F2;
     padding: 20px;
     box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
@@ -147,7 +147,7 @@ main{
 
 /* Cart styles */
 #cart {
-    background-color: #ffe6b3;
+    background-color: #0583F2;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 20px;
@@ -160,9 +160,9 @@ main{
     align-items: center;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: #fff3e0;
+    background-color: #05F2DB;
     border-radius: 8px;
-    border: 1px solid #ffc65c;
+    border: 1px solid #0583F2;
 }
 
 .product-cart img {
@@ -181,7 +181,7 @@ main{
 }
 
 button {
-    background-color: #ffa41c;
+    background-color: #0583F2;
     border: none;
     color: white;
     padding: 10px;
@@ -195,7 +195,7 @@ button {
     bottom: 20px;
     right: 20px;
     width: 23%;
-    background-color: #ffa41c;
+    background-color: #0583F2;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -277,7 +277,7 @@ button {
         flex-direction: row;
         align-items: center;
         justify-content: flex-start; 
-        background-color: #ffe6b3; 
+        background-color: #05F2DB; 
         z-index: 1000; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         padding: 10px; 
