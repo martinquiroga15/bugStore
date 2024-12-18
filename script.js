@@ -24,7 +24,7 @@ fetch(sheetURL)
             return product;
         }).filter(product => product['active']?.toLowerCase() === 'y');
 
-        allProducts = products; // Guardamos todos los productos
+        allProducts = products; 
         displayProducts(products);
     })
     .catch(error => console.error('Error al cargar productos:', error));
@@ -72,7 +72,7 @@ function displayProducts(products) {
     });
 
     const categoryList = document.getElementById('category-list');
-    categoryList.innerHTML = ''; // Limpiar categorías antes de agregar nuevas
+    categoryList.innerHTML = ''; 
     categories.forEach(category => {
         const li = document.createElement('li');
         li.textContent = category;
@@ -95,15 +95,15 @@ function scrollToCategory(category) {
     const categoryId = category.replace(/\s+/g, '-').toLowerCase();
     const categoryElement = document.getElementById(categoryId);
     if (categoryElement) {
-        categoryElement.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave
+        categoryElement.scrollIntoView({ behavior: 'smooth' }); 
     }
 }
 
 
 document.getElementById('view-cart').addEventListener('click', function() {
-    const cartSection = document.getElementById('preview');  // Aquí estamos apuntando a la sección del carrito
+    const cartSection = document.getElementById('preview');  
     if (cartSection) {
-        cartSection.scrollIntoView({ behavior: 'smooth' });  // Desplazamiento suave hacia el carrito
+        cartSection.scrollIntoView({ behavior: 'smooth' });  
     }
 });
 
@@ -226,12 +226,12 @@ document.getElementById('send-order').addEventListener('click', () => {
     const additionalInfo = additionalInfoInput.value.trim();
 
     const cartMessage = cart.map(item =>
-        `${item.name} - Cantidad: ${item.quantity} - Precio: $${(item.price * item.quantity).toFixed(2)}`
+        `${item.name} - Cantidad: ${item.quantity} - Precio: $${(item.price).toFixed(2)}`
     ).join('\n\n');
 
     const message = `Nombre: ${name}\nNúmero de contacto: ${contactNumber}\nInformación adicional: ${additionalInfo}\n\nPedido:\n${cartMessage}`;
 
-    const whatsappURL = `https://wa.me/3416154511?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/3416517841?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
 });
 
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Agregar la barra de búsqueda al principio de la sección main
     const mainSection = document.querySelector('main');
-    mainSection.insertBefore(searchBar, mainSection.firstChild);  // Insertamos antes del primer elemento en main
+    mainSection.insertBefore(searchBar, mainSection.firstChild); 
 
     // Evento de búsqueda
     searchBar.addEventListener('input', event => {
